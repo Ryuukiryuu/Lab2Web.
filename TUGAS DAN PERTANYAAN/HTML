@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2 - CSS Dasar</title>
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="eksternal.css" type="text/css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Contoh Internal CSS */
+        header {
+            background: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #0072ff;
+        }
+        header h1 {
+            color: #0F189F;
+        }
+
+        /* Untuk pembuktian perbedaan internal vs eksternal */
+        p {
+            color: blue; /* Internal CSS */
+            font-size: 16px;
+        }
+
+        /* Untuk ID vs Class */
+        #paragraf-1 {
+            color: red; /* ID lebih kuat */
+        }
+        .text-paragraf {
+            color: green; /* Class */
+        }
+    </style>
+</head>
+<body>
+    <!-- Identitas -->
+    <div class="identitas">
+        <h2>Nama : Wahyu Andika</h2>
+        <h2>NIM : 312410182</h2>
+        <h2>Kelas : TI.24.A2</h2>
+        <h2>Mata Kuliah : Pemrograman Web 1</h2>
+    </div>
+
+    <header>
+        <h1>Praktikum 2: CSS Dasar</h1>
+    </header>
+
+    <!-- Inline CSS -->
+    <p style="text-align: center; color: #067cf1;">
+        Ini adalah contoh paragraf dengan Inline CSS (inline punya prioritas tertinggi)
+    </p>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">CSS Eksternal</a>
+        <a href="#">HTML Dasar</a>
+    </nav>
+
+    <!-- Intro Box -->
+    <div id="intro">
+        <h1>Hello World</h1>
+        <p>Ini adalah contoh teks di dalam #intro.</p>
+    </div>
+
+    <!-- Percobaan ID vs Class -->
+    <p id="paragraf-1" class="text-paragraf">
+        Teks paragraf ini punya ID dan Class. (Hasilnya: Merah, karena ID > Class)
+    </p>
+</body>
+</html>
