@@ -1,1 +1,131 @@
+Langkah 1 – Membuat Struktur Dasar HTML
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dasar</title>
+</head>
+<body>
+    <!-- Header Identitas -->
+    <div class="identitas">
+        <h2>Nama : Wahyu Andika</h2>
+        <h2>NIM : 312410182</h2>
+        <h2>Kelas : TI.24.A2</h2>
+        <h2>Mata Kuliah : Pemrograman Web 1</h2>
+    </div>
+
+    <header>
+        <h1>CSS Internal dan <i>Inline CSS</i></h1>
+    </header>
+
+    <nav>
+        <a href="lab2_css_dasar.html">CSS Dasar</a>
+        <a href="lab2_css_eksternal.html">CSS Eksternal</a>
+        <a href="lab1_tag_dasar.html">HTML Dasar</a>
+    </nav>
+
+    <!-- Konten Intro -->
+    <div id="intro">
+        <h1>Hello World</h1>
+        <p>
+            Kami sedang belajar HTML dan CSS dasar, pada mata kuliah 
+            <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. 
+            Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana 
+            dalam rangka mengenal tag-tag dasar HTML dan CSS.
+        </p>
+        <a class="button btn-primary" href="#intro">Informasi selengkapnya.</a>
+    </div>
+</body>
+</html>
+
+Penjelasan : Langkah pertama membuat struktur HTML dengan elemen utama: header identitas, judul, navigasi, dan intro box. Belum ada CSS, jadi tampilannya masih polos.
+Langkah 2 – Menambahkan Internal CSS
+
+<head>
+    <title>CSS Dasar</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            min-height: 80px;
+            border-bottom: 1px solid #77CCEF;
+        }
+        h1 {
+            font-size: 24px;
+            color: #0F189F;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        h1 i {
+            color: #6d6a6b;
+        }
+    </style>
+</head>
+
+Penjelasan : Internal CSS ditulis di tag <style>. Di sini body diberi font Poppins, header diberi border bawah, judul <h1> diwarnai biru dan rata tengah, serta <i> di dalam <h1> diberi warna abu-abu.
+
+Langkah 3 – Menambahkan Inline CSS
+<p style="text-align: center; color: #067cf1;">
+    Ini adalah contoh paragraf dengan Inline CSS
+</p>
+
+Penjelasan : Inline CSS ditulis langsung pada atribut style di elemen. Paragraf ini ditampilkan dengan teks rata tengah dan warna biru.
+
+Langkah 4 – Menambahkan Eksternal CSS
+nav {
+    background: #20A759;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+nav .active,
+nav a:hover {
+    background: #0B6B3A;
+}
+
+Penjelasan : Eksternal CSS dipisahkan ke file .css agar rapi dan bisa digunakan ulang. Navigasi diberi background hijau dan efek hover.
+
+Tambahkan link ke HTML :
+<link rel="stylesheet" href="style.css" type="text/css">
+
+Langkah 5 – Menambahkan Selector ID & Class
+
+/* ID Selector */
+#intro {
+    background: #418fb1;
+    border: 1px solid #099249;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+#intro h1 {
+    text-align: left;
+    border: 0;
+    color: #fff;
+}
+
+/* Class Selector */
+.button {
+    padding: 15px 20px;
+    background: #bebcbd;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn-primary {
+    background: #E42A42;
+}
+
+Penjelasan :
+ID Selector #intro digunakan untuk mengatur box intro (background biru, teks putih, padding, border-radius).
+Class Selector .button dan .btn-primary digunakan untuk tombol (warna dasar abu, tombol utama merah).
