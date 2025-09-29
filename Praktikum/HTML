@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dasar</title>
+    <link rel="stylesheet" href="eksternal.css" type="text/css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 i {
+            color: #6d6a6b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Identitas -->
+    <div class="identitas">
+        <h2>Nama : Wahyu Andika</h2>
+        <h2>NIM : 312410182</h2>
+        <h2>Kelas : TI.24.A2</h2>
+        <h2>Mata Kuliah : Pemrograman Web 1</h2>
+    </div>
+
+    <header>
+        <h1>CSS Internal, Dan Inline CSS</h1>
+    </header>
+
+    <!-- Inline CSS -->
+    <p class="text-inline">
+</p>
+    </p>
+
+    <!-- Elemen untuk Eksternal CSS -->
+    <nav>
+        <a href="praktikum-2.html" class="active">CSS Dasar</a>
+        <a href="#">CSS Eksternal</a>
+        <a href="#">HTML Dasar</a>
+    </nav>
+
+    <div id="intro">
+        <h1>Hello World</h1>
+        <p>
+            Kami sedang belajar HTML dan CSS dasar, pada mata kuliah 
+            <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. 
+            Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana 
+            dalam rangka mengenal tag-tag dasar HTML dan CSS.
+        </p>
+        <a class="button btn-primary" href="#intro">Informasi selengkapnya.</a>
+    </div>
+</body>
+</html>
