@@ -1,5 +1,10 @@
+**Nama   :** Wahyu Andika  
+**NIM    :** 312410182  
+**Kelas  :** TI.24.A2  
+**Matkul :** Pemrograman Web 1  
+**Dosen Pengampu :** Agung Nugroho, S.Kom., M.Kom
 
-# 📖 Laporan Jawaban Tugas Praktikum 2 – CSS Dasar
+# Laporan Jawaban Tugas Praktikum 2 – CSS Dasar
 
 ## **1. Eksperimen dengan Mengubah dan Menambahkan Properti CSS**
 
@@ -31,7 +36,7 @@ nav a:hover {
 }
 ```
 
-📖 **Penjelasan:**
+ **Penjelasan:**
 Modifikasi ini menunjukkan bahwa CSS tidak hanya berfungsi sebagai pengatur warna dan ukuran font, tetapi juga sebagai sarana untuk menciptakan *user experience* yang lebih menarik. Penggunaan `border-radius` dan `box-shadow` merupakan implementasi prinsip desain modern yang menekankan *soft edges* dan *visual depth*.
 
 ---
@@ -58,7 +63,7 @@ h1 {
 </div>
 ```
 
-📖 **Penjelasan:**
+ **Penjelasan:**
 
 * Deklarasi `h1 { ... }` bersifat **global selector**, artinya berlaku untuk semua elemen `<h1>` di seluruh dokumen.
 * Deklarasi `#intro h1 { ... }` merupakan **descendant selector**, artinya hanya berlaku untuk elemen `<h1>` yang berada di dalam elemen dengan `id="intro"`.
@@ -90,7 +95,7 @@ p { color: blue; }
 <p style="color:red;">Ini paragraf</p>
 ```
 
-📖 **Penjelasan:**
+ **Penjelasan:**
 Jika ketiga jenis CSS tersebut diterapkan pada elemen yang sama, maka browser akan menampilkan gaya dari **inline CSS** karena memiliki tingkat prioritas paling tinggi. Hal ini sesuai dengan prinsip *cascade* dalam CSS, di mana konflik antar deklarasi diselesaikan dengan mempertimbangkan **specificity dan order of importance**.
 
 ---
@@ -114,7 +119,7 @@ Jika ketiga jenis CSS tersebut diterapkan pada elemen yang sama, maka browser ak
 <p id="paragraf-1" class="text-paragraf">Teks paragraf</p>
 ```
 
-📖 **Penjelasan:**
+ **Penjelasan:**
 Dalam aturan *specificity* CSS:
 
 * **ID selector (`#id`)** memiliki bobot prioritas lebih tinggi dibanding **Class selector (`.class`)**.
