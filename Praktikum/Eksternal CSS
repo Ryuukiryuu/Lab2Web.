@@ -1,0 +1,131 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f9fbfd, #d7ebff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Identitas */
+.identitas {
+    background: linear-gradient(90deg, #04ee3f, #0072ff);
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.identitas h2 {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.identitas h2:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Header Judul */
+header {
+    min-height: 80px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+header h1 {
+    font-size: 26px;
+    color: #0F189F;
+    padding: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Navigasi */
+nav {
+    background: linear-gradient(90deg, #20A759, #1a8a4c);
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    font-weight: 600;
+}
+nav .active,
+nav a:hover {
+    background: #0B6B3A;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Intro Box */
+#intro {
+    background: #2f02f3;
+    border: 1px solid #099249;
+    min-height: 120px;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    max-width: 850px;
+}
+#intro h1 {
+    text-align: left;
+    border: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    margin-bottom: 10px;
+}
+#intro p {
+    color: #f1f1f1;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Button */
+.button {
+    padding: 12px 20px;
+    background: #bebcbd;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: 600;
+}
+.button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.btn-primary {
+    background: linear-gradient(135deg, #E42A42, #c71f34);
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    #intro {
+        margin: 15px;
+        padding: 15px;
+    }
+    .identitas h2 {
+        font-size: 14px;
+    }
+}
